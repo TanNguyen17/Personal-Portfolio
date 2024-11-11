@@ -1,6 +1,3 @@
-import Image from "next/image";
-import HeroSection from "./components/HeroSection";
-import Navbar from "./components/Navbar";
 import LeftSide from "./components/LeftSide";
 import RightSide from "./components/RightSide";
 import { ScrollArea } from "@/components/ui/scroll-area"

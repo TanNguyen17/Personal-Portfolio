@@ -3,13 +3,12 @@ import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { motion, AnimatePresence } from "framer-motion"
+// import { motion, AnimatePresence } from "framer-motion"
 import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
 
 
@@ -79,7 +78,7 @@ const Experience = () => {
                                             {experience.time}
                                         </CardDescription>
                                     </CardHeader>
-                                    <CardDescription className='mt-5'>
+                                    <CardContent className='mt-5'>
                                         <ul className='list-none flex flex-col gap-2'>
                                             {
                                                 experience.activities.map((activity, idx) => (
@@ -91,7 +90,7 @@ const Experience = () => {
                                                 ))
                                             }
                                         </ul>
-                                    </CardDescription>
+                                    </CardContent>
                                 </Card>
                             </TabsContent>
 
