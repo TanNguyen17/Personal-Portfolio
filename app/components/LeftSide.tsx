@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from './Header'
-import Image from 'next/image';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';

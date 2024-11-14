@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const Header = () => {
     return (

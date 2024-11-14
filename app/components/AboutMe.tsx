@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion, AnimatePresence } from "framer-motion";
+// import { motion, AnimatePresence } from "framer-motion";
 
 const AboutMe = () => {
     return (
@@ -18,7 +18,7 @@ const AboutMe = () => {
                 My recent work includes Mindary, an app that leverages AI to support emotional health, tracking users moods and providing insights to foster resilience. Projects like these fuel my commitment to <a className=' text-green decoration-green underlined_1'>crafting meaningful, user-centered experiences.</a>
             </p>
             <p>
-                Beyond technology, I believe in the power of diverse perspectives, creative problem-solving, and a continuous drive to learn. Whether it's a new challenge in tech or a quiet moment in nature, I am always seeking inspiration to shape ideas that <a className='text-green decoration-green underlined'>make a difference.</a>
+                Beyond technology, I believe in the power of diverse perspectives, creative problem-solving, and a continuous drive to learn. Whether it is a new challenge in tech or a quiet moment in nature, I am always seeking inspiration to shape ideas that <a className='text-green decoration-green underlined'>make a difference.</a>
             </p>
         </section>
     )
