@@ -4,20 +4,15 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 
 export default function Home() {
   return (
-    <div className="flex flex-col max-w-max bg-navy-blue container px-6 md:px-12">
-      {/* <Navbar />
-      <div className="container mt-24 mx-auto px-12">
-        <HeroSection />
-      </div> */}
-      <div className=" flex justify-between gap-4 w-full relative">
-        <div className="flex sticky top-0 max-h-screen w-1/2 flex-col overflow-auto py-24">
+    <div className="flex flex-col max-w-max bg-navy-blue container px-6 lg:px-12">
+      <div className=" flex flex-col lg:flex-row lg:justify-between gap-4 lg:gap-10 w-full relative">
+        <div className="flex sticky lg:top-0 w-full max-h-screen lg:w-1/2 flex-col py-4 lg:py-16">
           <LeftSide />
         </div>
-        <ScrollArea className="col-span-12 md:col-span-6 w-1/2 overflow-auto py-24">
+        <ScrollArea className="w-full lg:w-1/2 overflow-auto py-4 lg:py-16 min-h-screen">
           <RightSide />
         </ScrollArea>
       </div>
-
     </div>
   );
 }

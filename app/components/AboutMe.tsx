@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion, AnimatePresence } from "framer-motion";
 
 const AboutMe = () => {
     return (
@@ -8,16 +9,16 @@ const AboutMe = () => {
                 <h1 className='text-3xl text-white'>About Me</h1>
             </div>
             <p className='mb-4'>
-                Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development.
-                Fast-forward to today, and I&aposve had the privilege of building software for an advertising agency, a start-up, a huge corporation, and a digital product studio.
+                I am a tech enthusiast with a huge passion for exploring the intricacies of information technology and understanding how its components cooperate with each other to create powerful products.
+                My journey in IT has been driven by a deep curiosity and a desire to create impactful solutions that <span className=' text-green decoration-green underlined'>empower individuals and communities.</span>
             </p>
-            <p className='mb-4'>
-                My main focus these days is building accessible user interfaces for our customers at Klaviyo.
-                I most enjoy building software in the sweet spot where design and engineering meet — things that look good but are also built well under the hood.
-                In my free time, I&apos;ve also released an online video course that covers everything you need to know to build a web app with the Spotify API.
+
+            <p className='mb-4  '>
+                From developing digital products that promote mental well-being, green living lifestyle to exploring innovative, sustainable approaches to everyday challenges, I am constantly inspired by the ways technology can enhance our lives.
+                My recent work includes Mindary, an app that leverages AI to support emotional health, tracking users moods and providing insights to foster resilience. Projects like these fuel my commitment to <a className=' text-green decoration-green underlined_1'>crafting meaningful, user-centered experiences.</a>
             </p>
             <p>
-                When I&aposm not at the computer, I&aposm usually rock climbing, reading, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds
+                Beyond technology, I believe in the power of diverse perspectives, creative problem-solving, and a continuous drive to learn. Whether it's a new challenge in tech or a quiet moment in nature, I am always seeking inspiration to shape ideas that <a className='text-green decoration-green underlined'>make a difference.</a>
             </p>
         </section>
     )

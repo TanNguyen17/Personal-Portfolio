@@ -69,4 +69,48 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  a {
+    cursor: pointer;
+  }
+
+  /* p > span {
+    display: inline-block;
+    position: relative;
+    color: var(--green);
+    transition: var(--transition);
+}
+
+p > span::after {
+  transition: var(--transition);
+}
+
+  p > span::after { 
+    content: ""; 
+    display: block; 
+    width: 0px; 
+    height: 1px; 
+    position: relative; 
+    bottom: 0.37em; 
+    background-color: var(--green); 
+    opacity: 0.5; 
+  } */
+  .underlined {
+    @apply relative
+   }
+  .underlined::after {
+    @apply content-[''] bg-purple-500 h-[2px] w-[0%] left-0 -bottom-[3px] rounded-xl absolute duration-300
+   }
+  .underlined:hover::after {
+    @apply w-[100%]
+   }
+
+   /* .underlined_1 {
+    @apply relative
+   }
+  .underlined_1::after {
+    @apply content-[''] bg-purple-500 h-[2px] w-[0%] left-0 -bottom-[3px] rounded-xl absolute duration-300
+   }
+  .underlined_1:hover::after {
+    @apply w-[100%]
+   } */
 }
