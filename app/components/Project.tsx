@@ -48,16 +48,21 @@ const projects: Project[] = [
         images: ['/projects/mindary/mindary.png', '/projects/mindary/mindary_1.svg', '/projects/mindary/mindary_2.svg', '/projects/mindary/mindary_3.svg', '/projects/mindary/mindary_4.svg'],
         accessLink: '',
         name: 'Mindary',
-        introduction: 'an innovative mental wellness app designed to support users in tracking their emotional well-being. Using AI-powered analysis, Mindary provides insights into mood trends, \
+        introduction: 'An innovative mental wellness app designed to support users in tracking their emotional well-being. Using AI-powered analysis, Mindary provides insights into mood trends, \
         identifies factors influencing mental health, and helps users reflect on positive memories.',
         techStack: ['Flutter', 'NodeJS', 'ExpressJS', 'LangChain', 'RAG', 'MongoDB'],
         activities: [
-            'A mental health app that help users track and analyze their emotional health through diary entries, use\
-            LLM to identify patterns, provide emotional support, and suggest mental health resources.',
-            'Achieved Top 28 placement at Swin Hackathon 2024 out of 128 competing teams.',
-            'Working on designing app workflow, API endpoints for user authentication, analyzing user entry.',
-            'Responsible for coordinating team tasks, setting development milestones, and ensuring smooth communication among team members.',
-            'Project remains under active development, with an aim of completing the main functions of the app and doing testing with.'
+            'A mental wellness app created to help users track and analyze their emotions through AI-powered journal entries, offering insights and personalized recommendations to support emotional well-being.',
+            'Managing a team of 5 to develop the app built with Flutter (front-end) and ExpressJS (back-end), with LangchainJS for natural language processing\
+            by LLM and MongoDB to store NOSQL and vector data storage.',
+            'Architected app workflows and data flows to ensure a seamless user experience.',
+            'Contributed to design and implement database entities, front-end UI, back-end logic and API endpoints for\
+            essential app functionalities including user authentication, journal analysis, and personalized recommendations.',
+            'Planned project milestones, setting clear goals, managing task delegation, and maintaining alignment on project objectives.',
+            'Achieved Top 28 placement at Swin Hackathon 2024 out of 128 competing teams.\
+            Currently in top 15 of RMIT AI for Sustainability Competition.',
+            'Project remains under active development, with an aim of completing the main\
+            functions of the app and doing testing with target customer.'
         ]
     },
     {
@@ -71,10 +76,13 @@ const projects: Project[] = [
         to admin verification before becoming publicly visible.',
         techStack: ['React', 'NodeJS', 'ExpressJS', 'MongoDB', 'AWS S3'],
         activities: [
-            'A forum website that enables users to create posts categorized by specific fields or topics, with posts subject to admin verification before becoming publicly visible.',
-            'Led a team of 5 members to develop the website using the MERN (MongoDB, ExpressJS, ReactJS, NodeJS) stack.',
-            'Designed and created functionality for users authentication, viewing others profiles, connect, and engage in real-time chat, enhancing community interaction and user engagement.',
-            'Hosted teams regular meetings for feedback and updating tasks. Planned and managed team deadlines, ensuring timely completion of tasks and offering support to team members in overcoming obstacles.'
+            'Led the development of a forum website where users can create posts categorized by specific fields or topics,\
+            with an admin verification system to ensure content quality before publication.',
+            'Designed and implemented full-stack functionalities for user authentication,\
+            profile viewing, real-time chat, and user connections, fostering a dynamic and engaging community platform.',
+            'Conducted regular team meetings for feedback and progress updates, effectively planning and managing deadlines to ensure timely task completion.\
+            Provided guidance and support to overcome technical and project-related challenges.',
+            'Archieved High Distinction score from the course and a 95% Lighthouse score for desktop devices.'
         ]
     },
     {
@@ -106,94 +114,59 @@ const Project = () => {
                 <h1 className='text-3xl text-white'>Projects</h1>
             </div>
             {projects.map((project, idx) => (
-                <Dialog key={idx}>
-                    <DialogTrigger value={project.name}>
-                        {/* <div className=' bg-transparent grid grid-cols-12 gap-4 my-4 p-4 rounded-lg hover:bg-lightest-slate-20 transition ease-out delay-80 hover:rounded-lg hover:border-slate-200'
-                            onMouseOver={() => {
-                                setOnHover(true)
-                                setX(5)
-                                setY(-5)
-                            }}
-                            onMouseLeave={() => {
-                                setOnHover(false)
-                                setX(0)
-                                setY(0)
-                            }}
-                        >
-                            <div className='col-span-3'>
-                                <Image src={project.imagePath} alt={project.name} width={150} height={150} className='rounded-sm border-slate-400 border-2' />
-                            </div>
-                            <Card className='col-span-9 border-none bg-transparent'>
-                                <CardHeader className='p-0'>
-                                    <CardTitle className={`text-lg ${onHover ? "text-green" : "text-white"} flex flex-row`}>
-                                        <a href={project.accessLink} className='flex flex-row gap-1'>
-                                            <span>{project.name}</span>
-                                            <motion.div
-                                                className=""
-                                                animate={{ x, y }}
-                                                transition={{ type: "spring" }}
-                                            >
-                                                <ArrowOutwardIcon className='text-sm' />
-                                            </motion.div>
-                                        </a>
-                                    </CardTitle>
-                                </CardHeader>
-                                <CardContent className='p-0 mt-2 text-slate-400 text-left'>
-                                    {project.introduction}
-                                </CardContent>
-                                <CardFooter className=' p-0 mt-2 flex flex-wrap'>
-                                    {project.techStack.map((tech, idx) => (
-                                        <Badge key={idx} className=' p-2 rounded-3xl mr-1.5 mt-3 text-green bg-green-20'>
-                                            {tech}
-                                        </Badge>
-                                    ))}
-                                </CardFooter>
-                            </Card> */}
-                        <CardComponent imagePath={project.imagePath} images={project.images} accessLink={project.accessLink} name={project.name} introduction={project.introduction} techStack={project.techStack} activities={project.activities} />
-                        {/* </div> */}
-                    </DialogTrigger>
-                    <DialogContent className='flex flex-col h-screen'>
-                        <ScrollArea className='h-full w-full'>
-                            <DialogHeader className='align-middle py-auto sm:text-center mb-2'>
-                                <DialogTitle className=' text-navy-blue align-middle text-2xl'>{project.name}</DialogTitle>
-                                {/* <DialogDescription>{project.name}</DialogDescription> */}
-                            </DialogHeader>
-                            <div className='flex flex-col justify-between items-center mb-4'>
-                                <Carousel className="w-full max-w-xs">
-                                    <CarouselContent>
-                                        {project.images.map((image, idx) => (
-                                            <CarouselItem key={idx}>
-                                                <div className=''>
-                                                    <Image
-                                                        src={image}
-                                                        alt='image gallery'
-                                                        width={0}
-                                                        height={0}
-                                                        sizes="100vw"
-                                                        style={{ width: '100%', height: 'auto' }} />
+                <motion.div
+                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: 100 }}
+                    transition={{ duration: 0.5 }}
+                    key={idx}
+                >
+                    <Dialog>
+                        <DialogTrigger value={project.name}>
+                            <CardComponent imagePath={project.imagePath} images={project.images} accessLink={project.accessLink} name={project.name} introduction={project.introduction} techStack={project.techStack} activities={project.activities} />
+                        </DialogTrigger>
+                        <DialogContent className='flex flex-col h-screen'>
+                            <ScrollArea className='h-full w-full'>
+                                <DialogHeader className='align-middle py-auto sm:text-center mb-2'>
+                                    <DialogTitle className=' text-navy-blue align-middle text-2xl'>{project.name}</DialogTitle>
+                                    {/* <DialogDescription>{project.name}</DialogDescription> */}
+                                </DialogHeader>
+                                <div className='flex flex-col justify-between items-center mb-2 md:mb-4'>
+                                    <Carousel className="w-full max-w-xs">
+                                        <CarouselContent>
+                                            {project.images.map((image, idx) => (
+                                                <CarouselItem key={idx}>
+                                                    <div className=''>
+                                                        <Image
+                                                            src={image}
+                                                            alt='image gallery'
+                                                            width={0}
+                                                            height={0}
+                                                            sizes="100vw"
+                                                            style={{ width: '100%', height: 'auto' }} />
+                                                    </div>
+                                                </CarouselItem>
+                                            ))}
+                                        </CarouselContent>
+                                        <CarouselPrevious />
+                                        <CarouselNext />
+                                    </Carousel>
+                                    {/* <Image src={project.imagePath} alt={project.name} width={300} height={250} className='text-center align-middle' /> */}
+                                </div>
+                                <div>
+                                    <ul>
+                                        {project.activities.map((activity, idx) => (
+                                            <li key={idx}>
+                                                <div className='flex flex-row gap-4'>
+                                                    <PlayArrowOutlinedIcon className='text-blue-600 text-sm mt-1' /> <span className='text-navy-blue'>{activity}</span>
                                                 </div>
-                                            </CarouselItem>
+                                            </li>
                                         ))}
-                                    </CarouselContent>
-                                    <CarouselPrevious />
-                                    <CarouselNext />
-                                </Carousel>
-                                {/* <Image src={project.imagePath} alt={project.name} width={300} height={250} className='text-center align-middle' /> */}
-                            </div>
-                            <div>
-                                <ul>
-                                    {project.activities.map((activity, idx) => (
-                                        <li key={idx}>
-                                            <div className='flex flex-row gap-4'>
-                                                <PlayArrowOutlinedIcon className='text-blue-600 text-sm mt-1' /> <span className='text-navy-blue'>{activity}</span>
-                                            </div>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </ScrollArea>
-                    </DialogContent>
-                </Dialog>
+                                    </ul>
+                                </div>
+                            </ScrollArea>
+                        </DialogContent>
+                    </Dialog>
+                </motion.div>
             )
             )}
 
@@ -216,7 +189,7 @@ const CardComponent = (project: Project) => {
             </div>
             <Card className='col-span-12 md:col-span-9 border-none bg-transparent'>
                 <CardHeader className='p-0'>
-                    <CardTitle className={`text-lg ${isHovered ? "text-green" : "text-white"} flex flex-row`}>
+                    <CardTitle className={`text-lg ${isHovered ? "text-green" : "text-white"} text-xl flex flex-row`}>
                         <a href={project.accessLink} className='flex flex-row gap-1'> <span>{project.name}</span>
                             <motion.div className="" animate={{ x, y }} transition={{ type: "spring" }} >
                                 <ArrowOutwardIcon className='text-sm' />
@@ -224,11 +197,11 @@ const CardComponent = (project: Project) => {
                         </a>
                     </CardTitle>
                 </CardHeader>
-                <CardContent className='p-0 mt-2 text-slate-400 text-left'>
+                <CardContent className='p-0 mt-2 text-slate-400 text-left text-lg'>
                     {project.introduction}
                 </CardContent>
                 <CardFooter className='p-0 mt-2 flex flex-wrap'>
-                    {project.techStack.map((tech, idx) => (<Badge key={idx} className='p-2 rounded-3xl mr-1.5 mt-3 text-green bg-green-20'> {tech} </Badge>))}
+                    {project.techStack.map((tech, idx) => (<Badge key={idx} className='text-base p-2 rounded-sm mr-1.5 mt-3 text-green bg-green-20'> {tech} </Badge>))}
                 </CardFooter>
             </Card>
         </div>

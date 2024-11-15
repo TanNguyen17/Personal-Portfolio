@@ -26,6 +26,7 @@ const config: Config = {
 				'white': {
 					DEFAULT: '#e6f1ff',
 				},
+				'custom-gradient': 'linear-gradient(90deg, rgba(0,180,216,1) 20%, rgba(0,255,191,1) 72%)',
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'

@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 @layer base {
   :root {
@@ -98,7 +98,7 @@ p > span::after {
     @apply relative
    }
   .underlined::after {
-    @apply content-[''] bg-purple-500 h-[2px] w-[0%] left-0 -bottom-[3px] rounded-xl absolute duration-300
+    @apply content-[''] bg-green h-[2px] w-[0%] left-0 -bottom-[3px] rounded-xl absolute duration-300
    }
   .underlined:hover::after {
     @apply w-[100%]
