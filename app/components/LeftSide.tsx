@@ -32,7 +32,7 @@ const LeftSide = () => {
                         View CV
                     </Button>
                 </a>
-                <a href='' target='_blank' className='hover:text-green transition-color ease-in-out duration-150 py-1'><GitHubIcon /></a>
+                <a href='https://github.com/TanNguyen17' target='_blank' className='hover:text-green transition-color ease-in-out duration-150 py-1'><GitHubIcon /></a>
                 <a href="https://www.linkedin.com/in/manh-tan-nguyen-6373b3275/" target='_blank' className='hover:text-green transition-color ease-in-out duration-150 py-1'><LinkedInIcon /></a>
                 <a href="https://www.facebook.com/profile.php?id=100013745418228" target='_blank' className='hover:text-green transition-color ease-in-out duration-150 py-1'><FacebookIcon /></a>
             </motion.div>
