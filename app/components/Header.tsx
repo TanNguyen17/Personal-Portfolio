@@ -50,10 +50,10 @@ const Header = () => {
                     animate="visible"
                 >
                     <p className=''>
-                        Welcome to my portfolio. Here, you can find a collection of my projects and experiences—from innovative AI applications in mental well-being to sustainable tech solutions designed to empower our communities.
-                    </p>
-                    <p className=''>
-                        Each project reflects my commitment to creative problem-solving, curiosity, and a desire to make technology accessible and meaningful. I invite you to explore, learn about my journey, and see how I’m pushing boundaries to create a more connected, resilient world.
+                        Welcome to my portfolio! I am Tan, a passionate information technology enthusiast driven by curiosity and a desire to create impactful solutions.
+                        Here, you will find highlights of my journey, including projects like the AI-powered Mindary app for mental wellness and a forum for green living lifestyle.
+                        My work spans front-end and back-end development, blending innovation with purpose to empower communities and improve lives.
+                        Explore my projects to see how I use technology to make a difference!
                     </p>
                 </motion.div>
                 {/* <Avatar>

@@ -106,11 +106,11 @@ const Experience = () => {
                                                 {experience.time}
                                             </CardDescription>
                                         </CardHeader>
-                                        <CardContent className='mt-5'>
+                                        <CardContent className='p-0 mt-1 md:mt-4'>
                                             <List className='list-none flex flex-col gap-2'>
                                                 {
                                                     experience.activities.map((activity, idx) => (
-                                                        <ListItem key={idx} className='text-lg'>
+                                                        <ListItem key={idx} className='text-lg px-0'>
                                                             <ListItemIcon className='flex flex-row gap-4'>
                                                                 <PlayArrowOutlinedIcon className='text-green text-2xl mt-1' />
                                                             </ListItemIcon>

@@ -130,9 +130,8 @@ const Project = () => {
                         </DialogTrigger>
                         <DialogContent className='flex flex-col h-screen'>
                             <ScrollArea className='h-full w-full'>
-                                <DialogHeader className='align-middle py-auto sm:text-center mb-2'>
+                                <DialogHeader className='align-middle py-auto sm:text-center mb-6'>
                                     <DialogTitle className=' text-navy-blue align-middle text-2xl'>{project.name}</DialogTitle>
-                                    {/* <DialogDescription>{project.name}</DialogDescription> */}
                                 </DialogHeader>
                                 <div className='flex flex-col justify-between items-center mb-2 md:mb-4'>
                                     <Carousel className="w-full max-w-xs">
@@ -157,18 +156,9 @@ const Project = () => {
                                     {/* <Image src={project.imagePath} alt={project.name} width={300} height={250} className='text-center align-middle' /> */}
                                 </div>
                                 <div>
-                                    {/* <ul>
-                                        {project.activities.map((activity, idx) => (
-                                            <li key={idx}>
-                                                <div className='flex flex-row gap-4'>
-                                                    <PlayArrowOutlinedIcon className='text-blue-600 text-sm mt-1' /> <span className='text-navy-blue'>{activity}</span>
-                                                </div>
-                                            </li>
-                                        ))}
-                                    </ul> */}
                                     <List>
                                         {project.activities.map((activity, idx) => (
-                                            <ListItem key={idx}>
+                                            <ListItem key={idx} className='px-0'>
                                                 <ListItemIcon>
                                                     <PlayArrowOutlinedIcon className='text-blue-600 text-xl mt-1' />
                                                 </ListItemIcon>
@@ -215,7 +205,7 @@ const CardComponent = (project: Project) => {
                     {project.introduction}
                 </CardContent>
                 <CardFooter className='p-0 mt-2 flex flex-wrap'>
-                    {project.techStack.map((tech, idx) => (<Badge key={idx} className='text-base p-2 rounded-sm mr-1.5 mt-3 text-green bg-green-20'> {tech} </Badge>))}
+                    {project.techStack.map((tech, idx) => (<Badge key={idx} className='text-base p-2 rounded-sm mr-1.5 mt-3 text-green bg-green-20 hover:bg-green hover:text-black'> {tech} </Badge>))}
                 </CardFooter>
             </Card>
         </div>

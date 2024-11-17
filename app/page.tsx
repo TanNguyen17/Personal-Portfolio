@@ -1,6 +1,9 @@
+"use client"
+import React, { Suspense } from "react";
 import LeftSide from "./components/LeftSide";
 import RightSide from "./components/RightSide";
 import { ScrollArea } from "@/components/ui/scroll-area"
+import Loading from "./components/loading"
 
 export default function Home() {
   return (

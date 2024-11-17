@@ -4,9 +4,9 @@ import Header from './Header'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import Button from '@mui/material/Button';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button"
 
 const container = (delay: number) => ({
     hidden: { x: -100, opacity: 0 },
@@ -29,7 +29,7 @@ const LeftSide = () => {
                 animate="visible"
             >
                 <a href="" target='_blank'>
-                    <Button variant="contained" startIcon={<CloudDownloadIcon />} className='text-green border-green bg-green-20 transition hover:scale-125  duration-500 ease-in-out'>
+                    <Button variant="outline" className='text-green border-green bg-green-20 transition hover:bg-green hover:scale-125  duration-500 ease-in-out'>
                         View CV
                     </Button>
                 </a>
