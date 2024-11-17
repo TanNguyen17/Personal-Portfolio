@@ -4,7 +4,6 @@ import Header from './Header'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 
