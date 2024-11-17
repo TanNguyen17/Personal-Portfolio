@@ -21,12 +21,12 @@ const Header = () => {
                 initial="hidden"
                 animate="visible"
             >
-                <h3 className='text-2xl text-green'>Hi, my name is</h3>
-                <h1 className='text-5xl text-white my-2'>Manh Tan Nguyen</h1>
+                <h3 className='text-xl md:text-2xl text-green'>Hi, my name is</h3>
+                <h1 className='text-3xl md:text-5xl text-white my-2'>Manh Tan Nguyen</h1>
                 <TypeAnimation
                     sequence={[
                         // Same substring at the start will only be typed out once, initially
-                        'A RMIT University Student',
+                        'A RMITer',
                         800, // wait 1s before replacing "Mice" with "Hamsters"
                         'A Tech Enthusiast',
                         800,
@@ -37,7 +37,7 @@ const Header = () => {
                     speed={60}
                     // style={{ fontSize: '2em', display: 'inline-block' }}
                     repeat={Infinity}
-                    className='text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#00b4d8] from-15% to-[#64ffda]'
+                    className='text-xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#00b4d8] from-15% to-[#64ffda]'
                 />
             </motion.div>
             <div

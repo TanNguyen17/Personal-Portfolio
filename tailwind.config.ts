@@ -12,7 +12,7 @@ const config: Config = {
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				'navy-blue': '#0a192f',
+				'navy-blue': '#112240',
 				'lightest-slate': {
 					DEFAULT: '#ccd6f6',
 					'20': 'rgba(204, 214, 246, 0.2)',

@@ -6,6 +6,10 @@
   font-family: Arial, Helvetica, sans-serif;
 } */
 
+.root {
+  color: text-slate-300;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

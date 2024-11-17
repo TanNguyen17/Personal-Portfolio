@@ -23,7 +23,7 @@ const LeftSide = () => {
         <div className='max-h-screen'>
             <Header />
             <motion.div
-                className='flex flex-row text-slate-400 gap-4 mt-6 justify-center md:justify-start'
+                className='flex flex-row text-slate-300 gap-4 mt-6 justify-center md:justify-start'
                 variants={container(1)}
                 initial="hidden"
                 animate="visible"

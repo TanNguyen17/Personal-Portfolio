@@ -25,12 +25,16 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
 
 import { ScrollArea } from "@/components/ui/scroll-area"
 import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
 import { Badge } from "@/components/ui/badge"
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import Image from 'next/image'
+import { ListItemText } from '@mui/material';
 
 interface Project {
     imagePath: string,
@@ -109,7 +113,7 @@ const Project = () => {
     // const [y, setY] = useState(0)
     return (
         <div className='flex flex-col'>
-            <div className='flex flex-row gap-2 mb-4 font-bold'>
+            <div className='flex flex-row gap-2 mb-8 font-bold'>
                 <h1 className='text-3xl text-green'>02. </h1>
                 <h1 className='text-3xl text-white'>Projects</h1>
             </div>
@@ -153,7 +157,7 @@ const Project = () => {
                                     {/* <Image src={project.imagePath} alt={project.name} width={300} height={250} className='text-center align-middle' /> */}
                                 </div>
                                 <div>
-                                    <ul>
+                                    {/* <ul>
                                         {project.activities.map((activity, idx) => (
                                             <li key={idx}>
                                                 <div className='flex flex-row gap-4'>
@@ -161,7 +165,17 @@ const Project = () => {
                                                 </div>
                                             </li>
                                         ))}
-                                    </ul>
+                                    </ul> */}
+                                    <List>
+                                        {project.activities.map((activity, idx) => (
+                                            <ListItem key={idx}>
+                                                <ListItemIcon>
+                                                    <PlayArrowOutlinedIcon className='text-blue-600 text-xl mt-1' />
+                                                </ListItemIcon>
+                                                <ListItemText primary={activity} />
+                                            </ListItem>
+                                        ))}
+                                    </List>
                                 </div>
                             </ScrollArea>
                         </DialogContent>
@@ -197,7 +211,7 @@ const CardComponent = (project: Project) => {
                         </a>
                     </CardTitle>
                 </CardHeader>
-                <CardContent className='p-0 mt-2 text-slate-400 text-left text-lg'>
+                <CardContent className='p-0 mt-2 text-slate-300 text-left text-lg'>
                     {project.introduction}
                 </CardContent>
                 <CardFooter className='p-0 mt-2 flex flex-wrap'>

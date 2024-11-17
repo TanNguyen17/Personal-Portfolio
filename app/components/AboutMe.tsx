@@ -6,7 +6,7 @@ const AboutMe = () => {
     return (
         <motion.section
             id='about'
-            className='text-slate-400 mb-10 h-screen'
+            className='text-slate-300 mb-10 h-screen'
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
             transition={{ duration: 0.5 }}

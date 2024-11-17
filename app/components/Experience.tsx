@@ -18,6 +18,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
 import { motion } from "framer-motion"
 
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import { ListItemText } from '@mui/material';
+
 interface Experience {
     name: string,
     position: string,
@@ -84,7 +89,7 @@ const Experience = () => {
                     <div className='w-full md:w-3/12 flex flex-row md:flex-col gap-0 justify-center md:justify-start'>
                         {experiences.map((experience, idx) => (
                             <TabsList className='border-none bg-trasparent py-0 h-12' key={idx}>
-                                <TabsTrigger value={experience.name} className='text-lg rounded-none text-slate-400 border-l-0 border-t-2 md:border-l-2 md:border-t-0 border-slate-600 bg-transparent data-[state=active]:border-green data-[state=active]:text-green data-[state=active]:bg-lightest-slate-20 w-full h-full'>{experience.name}</TabsTrigger>
+                                <TabsTrigger value={experience.name} className='text-lg rounded-none text-slate-300 border-l-0 border-t-2 md:border-l-2 md:border-t-0 border-slate-600 bg-transparent data-[state=active]:border-green data-[state=active]:text-green data-[state=active]:bg-lightest-slate-20 w-full h-full'>{experience.name}</TabsTrigger>
                             </TabsList>
                         ))}
                     </div>
@@ -97,22 +102,23 @@ const Experience = () => {
                                             <CardTitle className='flex flex-row'>
                                                 <h3 className='text-xl text-white'>{experience.position} <span className='text-green'>@ <a href={experience.accessLink} target="_blank" className='underlined'>{experience.place}</a></span></h3>
                                             </CardTitle>
-                                            <CardDescription className='text-slate-400 text-base'>
+                                            <CardDescription className='text-slate-300 text-base'>
                                                 {experience.time}
                                             </CardDescription>
                                         </CardHeader>
                                         <CardContent className='mt-5'>
-                                            <ul className='list-none flex flex-col gap-2'>
+                                            <List className='list-none flex flex-col gap-2'>
                                                 {
                                                     experience.activities.map((activity, idx) => (
-                                                        <li key={idx} className='text-lg'>
-                                                            <div className='flex flex-row gap-4'>
-                                                                <PlayArrowOutlinedIcon className='text-green text-sm mt-1' /> <span className='text-slate-400'>{activity}</span>
-                                                            </div>
-                                                        </li>
+                                                        <ListItem key={idx} className='text-lg'>
+                                                            <ListItemIcon className='flex flex-row gap-4'>
+                                                                <PlayArrowOutlinedIcon className='text-green text-2xl mt-1' />
+                                                            </ListItemIcon>
+                                                            <ListItemText className='text-slate-300' primary={activity} />
+                                                        </ListItem>
                                                     ))
                                                 }
-                                            </ul>
+                                            </List>
                                         </CardContent>
                                     </Card>
                                 </TabsContent>
