@@ -36,7 +36,7 @@ export default function RootLayout({
         className={`${roboto.className} antialiased`}
 
       >
-        <link rel="icon" href="/logo.png" sizes="32x32" />
+        <link rel="icon" href="/logo.png" sizes="32x32" className="rounded-full" />
         {children}
       </body>
     </html>
