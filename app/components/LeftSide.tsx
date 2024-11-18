@@ -27,7 +27,7 @@ const LeftSide = () => {
                 initial="hidden"
                 animate="visible"
             >
-                <a href="" target='_blank'>
+                <a href="https://drive.google.com/file/d/1teHUE7eKPtwIqWjo3d3kIIiEafhm-q3r/view?usp=drive_link" target='_blank'>
                     <Button variant="outline" className='text-green border-green bg-green-20 transition hover:bg-green hover:scale-125  duration-500 ease-in-out'>
                         View CV
                     </Button>
