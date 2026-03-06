@@ -1,19 +1,21 @@
 import React from 'react'
-import { ScrollArea } from "@/components/ui/scroll-area"
 import Project from './Project'
 import AboutMe from './AboutMe'
 import Experience from './Experience'
 import ContactInfo from './ContactInfo'
+import { reader } from '@/lib/keystatic'
 
+const RightSide = async () => {
+    const projects = await reader.collections.projects.all();
+    const experiences = await reader.collections.experiences.all();
 
-const RightSide = () => {
     return (
-        <ScrollArea className='h-full w-full flex flex-col gap-6'>
+        <div className='flex flex-col gap-4'>
             <AboutMe />
-            <Project />
-            <Experience />
+            <Project projects={projects.map(p => p.entry)} />
+            <Experience experiences={experiences.map(e => e.entry)} />
             <ContactInfo />
-        </ScrollArea>
+        </div>
     )
 }
 

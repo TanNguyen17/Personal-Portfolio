@@ -1,0 +1,23 @@
+{
+    "name": "RMIT FinTech Club Website",
+    "introduction": "The FinTech Club website project was designed to establish an online presence for our club, introducing and promoting it to a broader community. Our goal was to create a platform that was both informative and engaging, highlighting our club events, initiatives, and resources for prospective members and enthusiasts.",
+    "imagePath": "/projects/fintech_web/fintech_club_website.png",
+    "images": [
+        "/projects/fintech_web/fintech_club_website.png",
+        "/projects/fintech_web/fintech_web_1.png",
+        "/projects/fintech_web/fintech_web_2.png",
+        "/projects/fintech_web/fintech_web_3.png"
+    ],
+    "accessLink": "https://www.rmitfintechclub.com",
+    "techStack": [
+        "NextJS",
+        "TailwindCSS",
+        "MongoDB",
+        "AWS S3"
+    ],
+    "activities": [
+        "Collaborated on the development of the FinTech Club website to introduce and promote the club within the community.",
+        "Contributed to both front-end design and back-end CMS functionality to ensure a seamless user experience and efficient content management.",
+        "Developed content management workflows for easy updates, enabling the club to maintain an active online presence."
+    ]
+}

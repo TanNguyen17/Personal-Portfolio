@@ -1,0 +1,30 @@
+{
+    "name": "Mindary",
+    "introduction": "An innovative mental wellness app designed to support users in tracking their emotional well-being. Using AI-powered analysis, Mindary provides insights into mood trends, identifies factors influencing mental health, and helps users reflect on positive memories.",
+    "imagePath": "/projects/mindary/mindary.png",
+    "images": [
+        "/projects/mindary/mindary.png",
+        "/projects/mindary/mindary_1.svg",
+        "/projects/mindary/mindary_2.svg",
+        "/projects/mindary/mindary_3.svg",
+        "/projects/mindary/mindary_4.svg"
+    ],
+    "accessLink": "",
+    "techStack": [
+        "Flutter",
+        "NodeJS",
+        "ExpressJS",
+        "LangChain",
+        "RAG",
+        "MongoDB"
+    ],
+    "activities": [
+        "A mental wellness app created to help users track and analyze their emotions through AI-powered journal entries, offering insights and personalized recommendations to support emotional well-being.",
+        "Managing a team of 5 to develop the app built with Flutter (front-end) and ExpressJS (back-end), with LangchainJS for natural language processing by LLM and MongoDB to store NOSQL and vector data storage.",
+        "Architected app workflows and data flows to ensure a seamless user experience.",
+        "Contributed to design and implement database entities, front-end UI, back-end logic and API endpoints for essential app functionalities including user authentication, journal analysis, and personalized recommendations.",
+        "Planned project milestones, setting clear goals, managing task delegation, and maintaining alignment on project objectives.",
+        "Achieved Top 28 placement at Swin Hackathon 2024 out of 128 competing teams. Currently in top 15 of RMIT AI for Sustainability Competition.",
+        "Project remains under active development, with an aim of completing the main functions of the app and doing testing with target customer."
+    ]
+}

@@ -1,19 +1,19 @@
-"use client"
 import React from "react";
 import LeftSide from "./components/LeftSide";
 import RightSide from "./components/RightSide";
-import { ScrollArea } from "@/components/ui/scroll-area"
+import CursorSpotlight from "./components/CursorSpotlight";
 
 export default function Home() {
   return (
-    <div className="flex flex-col max-w-max bg-navy-blue container px-6 lg:px-12">
-      <div className=" flex flex-col lg:flex-row lg:justify-between gap-4 lg:gap-14 w-full relative">
-        <div className="flex lg:sticky lg:top-0 w-full max-h-screen lg:w-1/2 flex-col py-4 lg:py-16">
+    <div className="relative flex flex-col max-w-[1280px] mx-auto min-h-screen px-6 md:px-12 lg:px-16">
+      <CursorSpotlight />
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 w-full relative">
+        <div className="flex lg:sticky lg:top-0 w-full max-h-screen lg:w-[45%] flex-col py-12 lg:py-24">
           <LeftSide />
         </div>
-        <ScrollArea className="w-full lg:w-1/2 overflow-auto py-4 lg:py-16 min-h-screen">
+        <main className="w-full lg:w-[55%] py-12 lg:py-24 min-h-screen">
           <RightSide />
-        </ScrollArea>
+        </main>
       </div>
     </div>
   );

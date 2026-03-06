@@ -6,27 +6,35 @@ const AboutMe = () => {
     return (
         <motion.section
             id='about'
-            className='text-slate-300 mb-10 h-screen'
-            whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: 100 }}
-            transition={{ duration: 0.5 }}
+            className='mb-20 scroll-mt-20'
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true, margin: "-80px" }}
         >
-            <div className='flex flex-row gap-2 mb-4 font-bold'>
-                <h1 className='text-3xl text-green'>01. </h1>
-                <h1 className='text-3xl text-white'>About Me</h1>
-            </div>
-            <p className='mb-4 text-lg'>
-                I am a tech enthusiast with a huge passion for exploring the intricacies of information technology and understanding how its components cooperate with each other to create powerful products.
-                My journey in IT has been driven by a deep curiosity and a desire to create impactful solutions that <span className='underlined text-green decoration-green'>empower individuals and communities.</span>
-            </p>
+            <h2 className='font-syne text-sm uppercase tracking-widest text-green mb-6 flex items-center gap-3'>
+                <span className="h-px w-8 bg-green/40" />
+                About Me
+            </h2>
 
-            <p className='mb-4 text-lg'>
-                From developing digital products that promote mental well-being, green living lifestyle to exploring innovative, sustainable approaches to everyday challenges, I am constantly inspired by the ways technology can enhance our lives.
-                My recent work includes Mindary, an app that leverages AI to support emotional health, tracking users moods and providing insights to foster resilience. Projects like these fuel my commitment to <span className='underlined text-green decoration-green'>crafting meaningful, user-centered experiences.</span>
-            </p>
-            <p className='text-lg'>
-                Beyond technology, I believe in the power of diverse perspectives, creative problem-solving, and a continuous drive to learn. Whether it is a new challenge in tech or a quiet moment in nature, I am always seeking inspiration to shape ideas that <span className='underlined text-green decoration-green'>make a difference.</span>
-            </p>
+            <div className='flex flex-col gap-4 font-space text-base text-lightest-slate leading-relaxed'>
+                <p>
+                    I am a tech enthusiast with a profound passion for exploring the intricacies of information technology and understanding how complex systems cooperate to create powerful products.
+                    My journey in IT is driven by relentless curiosity and a desire to build solutions that{' '}
+                    <span className='text-white font-medium'>empower individuals and communities.</span>
+                </p>
+
+                <p>
+                    From developing digital products that promote mental well-being and green living, to exploring sustainable approaches to everyday challenges, I am constantly inspired by the ways technology can enhance our lives.
+                    My recent work includes{' '}
+                    <span className="text-green font-medium">Mindary</span>, an app leveraging AI to support emotional health, tracking moods, and providing insights to foster resilience.
+                </p>
+
+                <p>
+                    Beyond technology, I believe in the power of diverse perspectives, creative problem-solving, and continuous learning. Whether it is a new architectural challenge or a quiet moment in nature, I am always seeking inspiration to shape ideas that{' '}
+                    <span className='text-white font-medium'>make a tangible difference.</span>
+                </p>
+            </div>
         </motion.section>
     )
 }

@@ -1,0 +1,27 @@
+{
+    "name": "Greeli Forum",
+    "introduction": "Greeli Forum website, an interactive platform aimed at fostering community discussions and knowledge sharing around sustainability and green living. This forum enables users to create posts categorized by specific fields or topics, with posts subject to admin verification before becoming publicly visible.",
+    "imagePath": "/projects/greeli_forum/greeli.png",
+    "images": [
+        "/projects/greeli_forum/greeli.png",
+        "/projects/greeli_forum/greeli_forum_1.png",
+        "/projects/greeli_forum/greeli_forum_2.png",
+        "/projects/greeli_forum/greeli_forum_3.png",
+        "/projects/greeli_forum/greeli_forum_4.png",
+        "/projects/greeli_forum/greeli_forum_5.png"
+    ],
+    "accessLink": "https://group-project-cosc3060-2024a-ftech.onrender.com",
+    "techStack": [
+        "React",
+        "NodeJS",
+        "ExpressJS",
+        "MongoDB",
+        "AWS S3"
+    ],
+    "activities": [
+        "Led the development of a forum website where users can create posts categorized by specific fields or topics, with an admin verification system to ensure content quality before publication.",
+        "Designed and implemented full-stack functionalities for user authentication, profile viewing, real-time chat, and user connections, fostering a dynamic and engaging community platform.",
+        "Conducted regular team meetings for feedback and progress updates, effectively planning and managing deadlines to ensure timely task completion. Provided guidance and support to overcome technical and project-related challenges.",
+        "Archieved High Distinction score from the course and a 95% Lighthouse score for desktop devices."
+    ]
+}

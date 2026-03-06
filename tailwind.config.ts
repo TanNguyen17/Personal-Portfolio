@@ -9,24 +9,27 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				syne: ['var(--font-syne)', 'sans-serif'],
+				space: ['var(--font-space)', 'sans-serif'],
+			},
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				'navy-blue': '#112240',
+				'navy-blue': '#0c1222',
 				'lightest-slate': {
-					DEFAULT: '#ccd6f6',
-					'20': 'rgba(204, 214, 246, 0.2)',
-					'75': 'rgba(204, 214, 246, 0.75)',
-					'100': 'rgba(204, 214, 246, 1)',
+					DEFAULT: '#94a3b8',
+					'20': 'rgba(148, 163, 184, 0.08)',
+					'75': 'rgba(148, 163, 184, 0.75)',
+					'100': 'rgba(148, 163, 184, 1)',
 				},
 				'green': {
-					DEFAULT: '#64ffda',
-					'20': 'rgba(100, 255, 218, 0.2)',
+					DEFAULT: '#5eead4',
+					'20': 'rgba(94, 234, 212, 0.1)',
 				},
 				'white': {
-					DEFAULT: '#e6f1ff',
+					DEFAULT: '#e2e8f0',
 				},
-				'custom-gradient': 'linear-gradient(90deg, rgba(0,180,216,1) 20%, rgba(0,255,191,1) 72%)',
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
@@ -67,10 +70,10 @@ const config: Config = {
 				}
 			},
 			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
-			}
+				lg: '0.75rem',
+				md: '0.5rem',
+				sm: '0.25rem'
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

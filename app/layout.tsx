@@ -1,28 +1,26 @@
 import type { Metadata } from "next";
-import { Roboto } from 'next/font/google'
+import { Syne, Space_Grotesk } from 'next/font/google'
 import "./globals.css";
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
-
-const roboto = Roboto({
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
+const syne = Syne({
+  weight: ['400', '600', '700', '800'],
+  style: ['normal'],
   subsets: ['latin'],
   display: 'swap',
+  variable: '--font-syne',
+})
+
+const spaceGrotesk = Space_Grotesk({
+  weight: ['400', '500', '700'],
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-space',
 })
 
 export const metadata: Metadata = {
-  title: "Manh Tan Portfolio",
-  description: "This is a digital portfolio belong to Manh Tan",
+  title: "Manh Tan | Portfolio",
+  description: "Digital portfolio of Manh Tan Nguyen — Software Engineer & Innovator.",
 };
 
 export default function RootLayout({
@@ -31,11 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${roboto.className} antialiased`}
-
-      >
+    <html lang="en" className={`${syne.variable} ${spaceGrotesk.variable}`}>
+      <body className="antialiased font-space selection:bg-green/30 selection:text-white">
         <link rel="icon" href="/logo.png" sizes="32x32" className="rounded-full" />
         {children}
       </body>
