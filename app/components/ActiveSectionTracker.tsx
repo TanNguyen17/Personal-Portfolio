@@ -36,7 +36,7 @@ const ActiveSectionTracker = () => {
     }, [])
 
     return (
-        <nav className="hidden lg:flex flex-col gap-1 mt-6">
+        <nav className="hidden lg:flex flex-col gap-1 mt-3">
             {sections.map(({ id, label }) => {
                 const isActive = activeSection === id
                 return (

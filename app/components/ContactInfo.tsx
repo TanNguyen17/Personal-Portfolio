@@ -13,8 +13,8 @@ const ContactInfo = () => {
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             viewport={{ once: true, margin: "-80px" }}
         >
-            <h2 className='font-syne text-sm uppercase tracking-widest text-green mb-8 flex items-center gap-3'>
-                <span className="h-px w-8 bg-green/40" />
+            <h2 className='font-syne text-sm uppercase tracking-widest text-blue mb-8 flex items-center gap-3'>
+                <span className="h-px w-8 bg-blue/40" />
                 Get In Touch
             </h2>
 
@@ -27,7 +27,7 @@ const ContactInfo = () => {
                 <div className="flex flex-col gap-3 mt-2">
                     <a
                         href="mailto:tannm2005@gmail.com"
-                        className="group inline-flex items-center gap-2 text-white hover:text-green transition-colors font-medium"
+                        className="group inline-flex items-center gap-2 text-white hover:text-blue transition-colors font-medium"
                     >
                         TanNM2005@gmail.com
                         <ArrowOutwardIcon style={{ fontSize: 14 }} className="opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -35,7 +35,7 @@ const ContactInfo = () => {
 
                     <a
                         href="tel:+84859493676"
-                        className="group inline-flex items-center gap-2 text-white hover:text-green transition-colors font-medium"
+                        className="group inline-flex items-center gap-2 text-white hover:text-blue transition-colors font-medium"
                     >
                         +84 859 493 676
                         <ArrowOutwardIcon style={{ fontSize: 14 }} className="opacity-0 group-hover:opacity-100 transition-opacity" />

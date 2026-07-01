@@ -19,5 +19,8 @@
         "Collaborated on the development of the FinTech Club website to introduce and promote the club within the community.",
         "Contributed to both front-end design and back-end CMS functionality to ensure a seamless user experience and efficient content management.",
         "Developed content management workflows for easy updates, enabling the club to maintain an active online presence."
-    ]
+    ],
+    "metricValue": "Production",
+    "metricLabel": "Live Web",
+    "problemSolved": "RMIT FinTech Club needed a modern, centralized landing page and custom content workflows to showcase workshops, resources, and active community events. The platform provides a production-grade experience, enabling fast CMS updates and dynamic event discovery for members."
 }

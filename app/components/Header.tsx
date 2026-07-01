@@ -15,10 +15,10 @@ const fadeUp = (delay: number) => ({
 
 const Header = () => {
     return (
-        <header className="flex flex-col gap-6">
+        <header className="flex flex-col gap-4 lg:gap-5">
             {/* Portrait */}
             <motion.div
-                className='w-28 h-28 lg:w-32 lg:h-32 relative rounded-2xl overflow-hidden ring-2 ring-green/30 ring-offset-4 ring-offset-navy-blue'
+                className='w-24 h-24 lg:w-28 lg:h-28 relative rounded-2xl overflow-hidden ring-2 ring-blue/30 ring-offset-4 ring-offset-navy-blue'
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
@@ -28,7 +28,7 @@ const Header = () => {
                     alt='Manh Tan Nguyen'
                     fill
                     className='object-cover object-top'
-                    sizes="128px"
+                    sizes="112px"
                     priority
                 />
             </motion.div>
@@ -40,10 +40,10 @@ const Header = () => {
                 animate="visible"
                 className="flex flex-col gap-1"
             >
-                <h1 className="font-syne text-4xl md:text-[2.75rem] font-bold tracking-tight text-white leading-tight">
+                <h1 className="font-syne text-3xl md:text-[2.25rem] lg:text-[2.5rem] font-bold tracking-tight text-white leading-tight">
                     Manh Tan Nguyen
                 </h1>
-                <h2 className="font-space text-lg text-green font-medium">
+                <h2 className="font-space text-base lg:text-lg text-blue font-medium">
                     Software Engineer & Innovator
                 </h2>
             </motion.div>

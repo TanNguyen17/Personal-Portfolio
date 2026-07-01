@@ -8,5 +8,7 @@
         "Led a team to create an active-learning hub focused on Data Structures and Algorithms, encouraging a collaborative and active learning environment where participants can enhance their technical skills through peer-led discussions and presentations",
         "Participated in developing the webpage for club",
         "Hosted a programming competition for club members"
-    ]
+    ],
+    "type": "club",
+    "order": 3
 }

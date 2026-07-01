@@ -26,5 +26,8 @@
         "Planned project milestones, setting clear goals, managing task delegation, and maintaining alignment on project objectives.",
         "Achieved Top 28 placement at Swin Hackathon 2024 out of 128 competing teams. Currently in top 15 of RMIT AI for Sustainability Competition.",
         "Project remains under active development, with an aim of completing the main functions of the app and doing testing with target customer."
-    ]
+    ],
+    "metricValue": "Top 28 / Top 15",
+    "metricLabel": "Hackathons",
+    "problemSolved": "Mental health tracking often feels clinical or tedious for users. Mindary addresses this by utilizing LLM-powered conversational journal entries and automated mood analysis, translating complex reflection into engaging and actionable emotional resilience insights."
 }

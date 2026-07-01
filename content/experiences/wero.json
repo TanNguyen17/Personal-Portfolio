@@ -7,5 +7,7 @@
     "activities": [
         "Contributed documentation to improve STEAM For Vietnam: CS101 course - Introduction to computer science",
         "Created Wordle Game for Vietnam Geography which was used as example projects in CS101 course"
-    ]
+    ],
+    "type": "project",
+    "order": 2
 }

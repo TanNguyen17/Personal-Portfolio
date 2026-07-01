@@ -4,14 +4,14 @@
 
 @layer base {
   :root {
-    --background: 222 47% 7%;
+    --background: 222 47% 5%;
     --foreground: 214 32% 91%;
-    --card: 222 47% 9%;
+    --card: 222 47% 8%;
     --card-foreground: 214 32% 91%;
-    --popover: 222 47% 9%;
+    --popover: 222 47% 8%;
     --popover-foreground: 214 32% 91%;
-    --primary: 174 83% 60%;
-    --primary-foreground: 222 47% 7%;
+    --primary: 199 89% 60%;
+    --primary-foreground: 222 47% 5%;
     --secondary: 222 30% 14%;
     --secondary-foreground: 214 32% 91%;
     --muted: 222 30% 14%;
@@ -20,11 +20,11 @@
     --accent-foreground: 214 32% 91%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 222 30% 18%;
-    --input: 222 30% 18%;
-    --ring: 174 83% 60%;
-    --chart-1: 174 83% 60%;
-    --chart-2: 160 60% 45%;
+    --border: 222 30% 16%;
+    --input: 222 30% 16%;
+    --ring: 199 89% 60%;
+    --chart-1: 199 89% 60%;
+    --chart-2: 217 91% 60%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
@@ -44,8 +44,8 @@
   body {
     @apply bg-navy-blue text-foreground;
     background-image:
-      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(94, 234, 212, 0.08), transparent),
-      radial-gradient(ellipse 60% 40% at 80% 100%, rgba(94, 234, 212, 0.04), transparent);
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(56, 189, 248, 0.08), transparent),
+      radial-gradient(ellipse 60% 40% at 80% 100%, rgba(56, 189, 248, 0.04), transparent);
   }
 
   a {
@@ -62,12 +62,21 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgba(94, 234, 212, 0.2);
+    background: rgba(56, 189, 248, 0.2);
     border-radius: 3px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(94, 234, 212, 0.4);
+    background: rgba(56, 189, 248, 0.4);
+  }
+
+  /* Hide scrollbar utility */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
 
   .underlined {
@@ -75,7 +84,7 @@
   }
 
   .underlined::after {
-    @apply content-[''] bg-green h-[2px] w-[0%] left-0 -bottom-[3px] rounded-xl absolute duration-300;
+    @apply content-[''] bg-blue h-[2px] w-[0%] left-0 -bottom-[3px] rounded-xl absolute duration-300;
   }
 
   .underlined:hover::after {

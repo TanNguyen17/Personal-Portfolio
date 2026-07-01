@@ -23,5 +23,8 @@
         "Designed and implemented full-stack functionalities for user authentication, profile viewing, real-time chat, and user connections, fostering a dynamic and engaging community platform.",
         "Conducted regular team meetings for feedback and progress updates, effectively planning and managing deadlines to ensure timely task completion. Provided guidance and support to overcome technical and project-related challenges.",
         "Archieved High Distinction score from the course and a 95% Lighthouse score for desktop devices."
-    ]
+    ],
+    "metricValue": "95% Score",
+    "metricLabel": "Lighthouse Desktop",
+    "problemSolved": "Fostering community discussions around green living requires a secure, high-performance platform. Greeli Forum establishes this with clean post verification systems, user connections, real-time chats, and is optimized for low carbon footprint pages, scoring 95% on Lighthouse audits."
 }

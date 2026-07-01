@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${syne.variable} ${spaceGrotesk.variable}`}>
-      <body className="antialiased font-space selection:bg-green/30 selection:text-white">
+      <body className="antialiased font-space selection:bg-blue/30 selection:text-white">
         <link rel="icon" href="/logo.png" sizes="32x32" className="rounded-full" />
         {children}
       </body>

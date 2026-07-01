@@ -25,6 +25,9 @@ export default config({
         accessLink: fields.text({ label: 'Access Link' }),
         techStack: fields.array(fields.text({ label: 'Tech' }), { label: 'Tech Stack', itemLabel: props => props.value }),
         activities: fields.array(fields.text({ label: 'Activity' }), { label: 'Activities', itemLabel: props => props.value }),
+        metricValue: fields.text({ label: 'Metric Value (optional, e.g., 95% or Top 28)' }),
+        metricLabel: fields.text({ label: 'Metric Label (optional, e.g., Lighthouse Score)' }),
+        problemSolved: fields.text({ label: 'Problem & Solution (optional)', multiline: true }),
       },
     }),
     experiences: collection({
@@ -39,6 +42,17 @@ export default config({
         accessLink: fields.url({ label: 'Access Link' }),
         time: fields.text({ label: 'Time (e.g., 3/2024 - Present)' }),
         activities: fields.array(fields.text({ label: 'Activity' }), { label: 'Activities', itemLabel: props => props.value }),
+        type: fields.select({
+          label: 'Type',
+          options: [
+            { label: 'Work', value: 'work' },
+            { label: 'Education', value: 'education' },
+            { label: 'Club', value: 'club' },
+            { label: 'Project / Initiative', value: 'project' }
+          ],
+          defaultValue: 'work'
+        }),
+        order: fields.integer({ label: 'Sort Order (optional, lower is older)' }),
       },
     }),
   },
