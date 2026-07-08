@@ -17,22 +17,20 @@ const AboutMe = () => {
                 About Me
             </h2>
 
-            <div className='flex flex-col gap-4 font-space text-base text-lightest-slate leading-relaxed'>
+            <div className='flex flex-col gap-5 font-space text-base text-lightest-slate leading-relaxed'>
                 <p>
-                    I am a tech enthusiast with a profound passion for exploring the intricacies of information technology and understanding how complex systems cooperate to create powerful products.
-                    My journey in IT is driven by relentless curiosity and a desire to build solutions that{' '}
-                    <span className='text-white font-medium'>empower individuals and communities.</span>
+                    I am a software engineer driven by a lifelong love for learning and a deep curiosity about how complex systems work. 
+                    For me, technology is more than just writing code—it is a powerful tool to build innovative solutions that solve real-world problems, <span className='text-white font-medium'>empower individuals, and make a positive social impact.</span>
                 </p>
 
                 <p>
-                    From developing digital products that promote mental well-being and green living, to exploring sustainable approaches to everyday challenges, I am constantly inspired by the ways technology can enhance our lives.
-                    My recent work includes{' '}
-                    <span className="text-blue font-medium">Mindary</span>, an app leveraging AI to support emotional health, tracking moods, and providing insights to foster resilience.
+                    My journey spans across constructing robust, secure Identity and Access Management (IAM) architectures in the banking industry, building AI-powered educational ecosystems, and developing custom pathfinding algorithms. 
+                    I strive to blend backend scalability and security with human-centric products, such as <span className="text-blue font-medium">Mindary</span> (an AI-driven mental wellness application) and cultural initiatives (like history-themed blockchain games).
                 </p>
 
                 <p>
-                    Beyond technology, I believe in the power of diverse perspectives, creative problem-solving, and continuous learning. Whether it is a new architectural challenge or a quiet moment in nature, I am always seeking inspiration to shape ideas that{' '}
-                    <span className='text-white font-medium'>make a tangible difference.</span>
+                    I thrive in collaborative, forward-thinking environments where I can learn new concepts, tackle challenging architectures, and lead team initiatives. 
+                    Whether designing high-throughput microservices or learning a new tech stack, my ultimate goal remains constant: to use technology as a force for good, driving <span className='text-white font-medium'>meaningful change one line of code at a time.</span>
                 </p>
             </div>
         </motion.section>

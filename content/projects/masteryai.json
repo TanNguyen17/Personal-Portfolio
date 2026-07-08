@@ -14,7 +14,7 @@
         "/projects/masteryai/training_courses_1.webp",
         "/projects/masteryai/training_courses_2.webp"
     ],
-    "accessLink": "https://github.com/Initiative-Hub/MasteryAI-FE1",
+    "accessLink": "",
     "techStack": [
         "Java Spring Boot",
         "FastAPI",
