@@ -1,9 +1,9 @@
 {
     "name": "Mindary",
     "introduction": "An innovative mental wellness app designed to support users in tracking their emotional well-being. Using AI-powered analysis, Mindary provides insights into mood trends, identifies factors influencing mental health, and helps users reflect on positive memories.",
-    "imagePath": "/projects/mindary/mindary.png",
+    "imagePath": "/projects/mindary/mindary.webp",
     "images": [
-        "/projects/mindary/mindary.png",
+        "/projects/mindary/mindary.webp",
         "/projects/mindary/mindary_1.svg",
         "/projects/mindary/mindary_2.svg",
         "/projects/mindary/mindary_3.svg",

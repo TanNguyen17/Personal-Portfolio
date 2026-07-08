@@ -1,0 +1,29 @@
+{
+    "name": "Modular RAG Benchmarking Framework",
+    "introduction": "A high-performance, modular benchmarking framework designed to evaluate and optimize Retrieval-Augmented Generation (RAG) pipelines. The framework runs combinatorial sweeps of 160 pruned configurations across 5 research axes (chunking, query transforms, retrieval, indexing, post-retrieval processing) using local LLMs (Ollama) and performs comprehensive ANOVA and machine learning-based statistical analyses.",
+    "imagePath": "/projects/debug-team-module01/primary.webp",
+    "images": [
+        "/projects/debug-team-module01/primary.webp"
+    ],
+    "accessLink": "https://github.com/AIVIETNAM-AIO-MyNguyen/Debug-Team_Module01",
+    "techStack": [
+        "Python",
+        "Ollama",
+        "ChromaDB",
+        "statsmodels",
+        "Ragas",
+        "PyTorch",
+        "HuggingFace",
+        "uv"
+    ],
+    "activities": [
+        "Developed a modular benchmarking framework executing a combinatorial sweep of 160 pruned configurations across 5 research axes: chunking, query transforms, retrieval, indexing, and post-retrieval processing.",
+        "Implemented Stage 1 retrieval metrics (Hit Rate@5, Recall@5, MRR@5, NDCG@5) and Stage 2 generative quality metrics using RAGAS semantic audit scores (Faithfulness, Relevancy, Correctness) on top pipelines.",
+        "Integrated statistical analysis pipelines using Multi-Way and Two-Way ANOVA (via statsmodels) to measure the main and interaction effects (Eta-Squared) of RAG parameters on retrieval success.",
+        "Engineered custom machine learning sensitivity analyses including Random Forest feature importance and Dunnett's test for ablation studies.",
+        "Deployed local LLM evaluation utilizing Ollama (Qwen models) and integrated disk-backed caching for query transformations (HyDE, rewrite) to optimize throughput."
+    ],
+    "metricValue": "160",
+    "metricLabel": "Configs Swept",
+    "problemSolved": "The design space for RAG pipelines is extremely fragmented, making it difficult to find optimal parameter settings. This framework automates testing across all valid configurations and applies rigorous ANOVA statistical modeling and Random Forest sensitivity analysis to identify the optimal pipeline configuration with empirical certainty, bypassing manual guesswork."
+}

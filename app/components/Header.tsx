@@ -24,7 +24,7 @@ const Header = () => {
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
             >
                 <Image
-                    src='/personal_cut.png'
+                    src='/personal_cut.webp'
                     alt='Manh Tan Nguyen'
                     fill
                     className='object-cover object-top'

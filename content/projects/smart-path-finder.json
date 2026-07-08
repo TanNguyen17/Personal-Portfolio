@@ -1,0 +1,30 @@
+{
+    "name": "Smart Path Finder",
+    "introduction": "An interactive, high-performance pathfinding and routing engine implemented entirely from scratch in Python with zero external dependencies. The engine features custom-built data structures (binary min-heaps), dynamic obstacle avoidance, rush-hour traffic simulation (time-aware routing), and precomputed hub cache tables for optimal query speeds.",
+    "imagePath": "/projects/smart-path-finder/primary.webp",
+    "images": [
+        "/projects/smart-path-finder/primary.webp",
+        "/projects/smart-path-finder/node_explore.webp",
+        "/projects/smart-path-finder/total_distance.webp",
+        "/projects/smart-path-finder/total_time.webp"
+    ],
+    "accessLink": "https://github.com/TanNguyen17/smart-path-finder",
+    "techStack": [
+        "Python",
+        "Data Structures",
+        "Dijkstra's Algorithm",
+        "Bidirectional Dijkstra",
+        "Time-Aware Routing",
+        "Benchmarking Suite"
+    ],
+    "activities": [
+        "Developed a dependency-free pathfinding and routing engine in Python, including a custom binary Min-Heap supporting O(log V) decrease-key operations.",
+        "Implemented Standard Dijkstra, Bidirectional Dijkstra (reduces search space by exploring outward from both source and target), and Time-Aware Dijkstra utilizing sinusoidal rush-hour traffic multipliers.",
+        "Designed a dynamic obstacle avoidance mechanism allowing real-time exclusion of nodes or edges without rebuilding the graph.",
+        "Engineered a Hub-Based Precomputation Cache that caches paths between high-degree structural nodes, scaling query times to sub-millisecond execution.",
+        "Created an interactive CLI and an empirical benchmarking suite (evaluation.py) to evaluate execution time, node exploration size, and cache hit metrics."
+    ],
+    "metricValue": "O(log V)",
+    "metricLabel": "Heap Operations",
+    "problemSolved": "Routing engines often rely heavily on large third-party libraries and face scaling challenges when handling dynamic obstacles or hourly traffic shifts. Smart Path Finder solves this by building custom, optimized data structures (a binary min-heap), implementing bidirectional search to shrink the search space, and introducing a hub-based precomputation cache to speed up queries, all in a pure standard library Python implementation."
+}

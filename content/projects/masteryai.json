@@ -1,0 +1,38 @@
+{
+    "name": "MasteryAI",
+    "introduction": "A premium, enterprise-grade AI-powered education ecosystem that supports trainers, educators, and students. The platform consists of a highly optimized React 19 / Next.js frontend and four backend microservices orchestrating secure Google OAuth/JWT auth, classroom provisioning, Bring-Your-Own-Key (BYOK) LLM credentials vaults, pgvector-based RAG engines, and real-time SSE token streaming.",
+    "imagePath": "/projects/masteryai/landing.webp",
+    "images": [
+        "/projects/masteryai/landing.webp",
+        "/projects/masteryai/Create Education Website Design System.webp",
+        "/projects/masteryai/AI Classroom Configuration.webp",
+        "/projects/masteryai/Virtual Classroom List (Participant View).webp",
+        "/projects/masteryai/Chat Interface.webp",
+        "/projects/masteryai/trainer_portal_1.webp",
+        "/projects/masteryai/trainer_portal_2.webp",
+        "/projects/masteryai/trainer_portal_3.webp",
+        "/projects/masteryai/training_courses_1.webp",
+        "/projects/masteryai/training_courses_2.webp"
+    ],
+    "accessLink": "https://github.com/Initiative-Hub/MasteryAI-FE1",
+    "techStack": [
+        "Next.js",
+        "React",
+        "Spring Boot",
+        "FastAPI",
+        "PostgreSQL / pgvector",
+        "Redis Streams",
+        "AWS (KMS, SQS, S3, DynamoDB)",
+        "LangChain"
+    ],
+    "activities": [
+        "Architected a modular microservice ecosystem comprising a Next.js frontend (FE1), Java/Spring Boot core learning and classroom managers (BE1, BE2), and a FastAPI LLM gateway (BE3).",
+        "Developed a domain-driven, role-governed frontend using React 19, Next.js 16 (App Router), Tailwind CSS v4, and daisyUI v5 supporting four distinct user roles (Admin, Trainer, Educator, Student).",
+        "Built a secure Bring-Your-Own-Key (BYOK) credential service with envelope encryption at rest using AWS KMS, ensuring LLM API keys are encrypted at the application layer before reaching the DB.",
+        "Engineered a high-performance RAG pipeline on FastAPI and LangChain leveraging PostgreSQL/pgvector for document embeddings, DynamoDB for chat history logging, and Redis Streams for SSE real-time token streaming.",
+        "Established decoupled notifications and document ingestion queues using AWS SQS and S3, alongside Redis session caching, to handle highly concurrent learning room states and presence tracking."
+    ],
+    "metricValue": "5 Services",
+    "metricLabel": "Distributed System",
+    "problemSolved": "Building a scalable AI education system requires balancing high-throughput streaming and RAG workloads with strict user access control and secure API key handling. MasteryAI resolves this by implementing a polyglot microservice layout: Java Spring Boot manages the rigid transactional structures (auth, rosters, keys), Python FastAPI/LangChain accelerates vector queries and LLM coordination, and Next.js delivers a responsive, role-adaptive web experience."
+}

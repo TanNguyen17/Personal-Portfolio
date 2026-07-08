@@ -1,14 +1,14 @@
 {
     "name": "Greeli Forum",
     "introduction": "Greeli Forum website, an interactive platform aimed at fostering community discussions and knowledge sharing around sustainability and green living. This forum enables users to create posts categorized by specific fields or topics, with posts subject to admin verification before becoming publicly visible.",
-    "imagePath": "/projects/greeli_forum/greeli.png",
+    "imagePath": "/projects/greeli_forum/greeli.webp",
     "images": [
-        "/projects/greeli_forum/greeli.png",
-        "/projects/greeli_forum/greeli_forum_1.png",
-        "/projects/greeli_forum/greeli_forum_2.png",
-        "/projects/greeli_forum/greeli_forum_3.png",
-        "/projects/greeli_forum/greeli_forum_4.png",
-        "/projects/greeli_forum/greeli_forum_5.png"
+        "/projects/greeli_forum/greeli.webp",
+        "/projects/greeli_forum/greeli_forum_1.webp",
+        "/projects/greeli_forum/greeli_forum_2.webp",
+        "/projects/greeli_forum/greeli_forum_3.webp",
+        "/projects/greeli_forum/greeli_forum_4.webp",
+        "/projects/greeli_forum/greeli_forum_5.webp"
     ],
     "accessLink": "https://group-project-cosc3060-2024a-ftech.onrender.com",
     "techStack": [

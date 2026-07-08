@@ -1,12 +1,12 @@
 {
     "name": "RMIT FinTech Club Website",
     "introduction": "The FinTech Club website project was designed to establish an online presence for our club, introducing and promoting it to a broader community. Our goal was to create a platform that was both informative and engaging, highlighting our club events, initiatives, and resources for prospective members and enthusiasts.",
-    "imagePath": "/projects/fintech_web/fintech_club_website.png",
+    "imagePath": "/projects/fintech_web/fintech_club_website.webp",
     "images": [
-        "/projects/fintech_web/fintech_club_website.png",
-        "/projects/fintech_web/fintech_web_1.png",
-        "/projects/fintech_web/fintech_web_2.png",
-        "/projects/fintech_web/fintech_web_3.png"
+        "/projects/fintech_web/fintech_club_website.webp",
+        "/projects/fintech_web/fintech_web_1.webp",
+        "/projects/fintech_web/fintech_web_2.webp",
+        "/projects/fintech_web/fintech_web_3.webp"
     ],
     "accessLink": "https://www.rmitfintechclub.com",
     "techStack": [
