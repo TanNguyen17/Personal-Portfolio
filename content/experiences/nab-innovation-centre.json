@@ -1,0 +1,16 @@
+{
+    "name": "NAB Innovation Centre",
+    "position": "Staff Identity Engineer",
+    "place": "NAB Innovation Centre Vietnam",
+    "accessLink": "https://www.nab.com.au/about-us/careers/nab-innovation-centre-vietnam",
+    "time": "July 2025 - Present",
+    "activities": [
+        "Uplifted the Role Creation workflow in the Self-Service Portal by adding robust API validation that verifies incoming data against complex backend constraints instead of leaving it to only UI validation.",
+        "Achieved a ~40% data retrieval speedup within a validated Proof-of-Concept (POC) by driving the technical migration of the Role Management Portal off a legacy SailPoint IIQ codebase into a standalone miniapp and rewriting inefficient core queries.",
+        "Conducted root-cause analysis to remediate production defects across 4 core Identity and Access Management (IAM) capabilities (Identity Lifecycle Management, application Connectors, Self-Service Portal, and Role Management Portal) while shipping feature enhancements requested by internal stakeholder teams.",
+        "Exercised strong proactiveness by independently building a POC internal test case management tool to transition the QA team off ad-hoc Confluence tracking, which is currently undergoing User Acceptance Testing alongside QA testers to validate functionality.",
+        "Graduated NAB StarCamp Batch 10 with prestigious MVP Certification (June 2025)."
+    ],
+    "type": "work",
+    "order": 5
+}

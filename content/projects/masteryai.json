@@ -1,6 +1,6 @@
 {
     "name": "MasteryAI",
-    "introduction": "A premium, enterprise-grade AI-powered education ecosystem that supports trainers, educators, and students. The platform consists of a highly optimized React 19 / Next.js frontend and four backend microservices orchestrating secure Google OAuth/JWT auth, classroom provisioning, Bring-Your-Own-Key (BYOK) LLM credentials vaults, pgvector-based RAG engines, and real-time SSE token streaming.",
+    "introduction": "RMIT Capstone Project (School of Software and Engineering) | March 2026 – Present\n\nA premium, enterprise-grade AI-powered education ecosystem that supports trainers, educators, and students. The platform consists of a highly optimized React 19 / Next.js frontend and backend microservices orchestrating secure Google OAuth/JWT auth, classroom provisioning, Bring-Your-Own-Key (BYOK) LLM credentials vaults, pgvector-based RAG engines, and real-time SSE token streaming.",
     "imagePath": "/projects/masteryai/landing.webp",
     "images": [
         "/projects/masteryai/landing.webp",
@@ -16,21 +16,20 @@
     ],
     "accessLink": "https://github.com/Initiative-Hub/MasteryAI-FE1",
     "techStack": [
-        "Next.js",
-        "React",
-        "Spring Boot",
+        "Java Spring Boot",
         "FastAPI",
-        "PostgreSQL / pgvector",
-        "Redis Streams",
-        "AWS (KMS, SQS, S3, DynamoDB)",
-        "LangChain"
+        "ElasticMQ",
+        "HashiCorp Vault",
+        "PostgreSQL",
+        "DynamoDB",
+        "Redis",
+        "Docker"
     ],
     "activities": [
-        "Architected a modular microservice ecosystem comprising a Next.js frontend (FE1), Java/Spring Boot core learning and classroom managers (BE1, BE2), and a FastAPI LLM gateway (BE3).",
-        "Developed a domain-driven, role-governed frontend using React 19, Next.js 16 (App Router), Tailwind CSS v4, and daisyUI v5 supporting four distinct user roles (Admin, Trainer, Educator, Student).",
-        "Built a secure Bring-Your-Own-Key (BYOK) credential service with envelope encryption at rest using AWS KMS, ensuring LLM API keys are encrypted at the application layer before reaching the DB.",
-        "Engineered a high-performance RAG pipeline on FastAPI and LangChain leveraging PostgreSQL/pgvector for document embeddings, DynamoDB for chat history logging, and Redis Streams for SSE real-time token streaming.",
-        "Established decoupled notifications and document ingestion queues using AWS SQS and S3, alongside Redis session caching, to handle highly concurrent learning room states and presence tracking."
+        "Architected a scalable microservices infrastructure to handle high-concurrency traffic with an expected throughput of ~1,000 RPS for a target of 300,000+ users.",
+        "Optimized high-volume data handling and ingestion by leveraging message queues to decouple heavy workloads, ensuring system scalability and fault tolerance under peak loads.",
+        "Secured sensitive user data at rest by utilizing HashiCorp Vault to encrypt both API keys and chat conversations, ensuring strict compliance with Decree 13/2023 data privacy regulations.",
+        "Mitigated database bottlenecks and minimized runtime latency by utilizing an in-memory cache to store both hot database queries and transient decrypted credentials under strict TTL constraints."
     ],
     "metricValue": "5 Services",
     "metricLabel": "Distributed System",

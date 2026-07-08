@@ -1,0 +1,13 @@
+{
+    "name": "FinTech Club - Head of IT",
+    "position": "Head of Information Technology Department",
+    "place": "RMIT Vietnam FinTech Club",
+    "accessLink": "https://www.facebook.com/rmitfintechclub",
+    "time": "Jan 2025 - Jan 2026",
+    "activities": [
+        "Led a team to develop History Chess Game project - a chess game that brings Vietnamese rich history (mostly focus on the born of a dynasty) to players. Additionally, the game is powered by a private blockchain network that enable user to gain coins via playing game and use the earned coins to buy or trade NFT items.",
+        "Supervise the enhancement of FinTech Club Website to transfer the website into a CMS platform that allows club members to dynamic manage the website content (research papers, podcast, videos) and also deliver better user experience."
+    ],
+    "type": "club",
+    "order": 4
+}

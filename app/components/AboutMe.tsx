@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import { motion } from "framer-motion";
-import TerminalConsole from './TerminalConsole';
 
 const AboutMe = () => {
     return (
@@ -36,8 +35,6 @@ const AboutMe = () => {
                     <span className='text-white font-medium'>make a tangible difference.</span>
                 </p>
             </div>
-
-            <TerminalConsole />
         </motion.section>
     )
 }

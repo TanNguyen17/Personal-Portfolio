@@ -1,6 +1,6 @@
 {
-    "name": "Smart Path Finder",
-    "introduction": "An interactive, high-performance pathfinding and routing engine implemented entirely from scratch in Python with zero external dependencies. The engine features custom-built data structures (binary min-heaps), dynamic obstacle avoidance, rush-hour traffic simulation (time-aware routing), and precomputed hub cache tables for optimal query speeds.",
+    "name": "Time-Dependent Pathfinding System",
+    "introduction": "RMIT Algorithms and Analysis Course (Semester 1, 2026) | An interactive, high-performance pathfinding and routing engine implemented entirely from scratch in Python with zero external dependencies. The engine features custom-built data structures (binary min-heaps), dynamic obstacle avoidance, rush-hour traffic simulation (time-aware routing), and precomputed hub cache tables for optimal query speeds.",
     "imagePath": "/projects/smart-path-finder/primary.webp",
     "images": [
         "/projects/smart-path-finder/primary.webp",
@@ -11,18 +11,13 @@
     "accessLink": "https://github.com/TanNguyen17/smart-path-finder",
     "techStack": [
         "Python",
-        "Data Structures",
-        "Dijkstra's Algorithm",
-        "Bidirectional Dijkstra",
-        "Time-Aware Routing",
-        "Benchmarking Suite"
+        "Custom Data Structures",
+        "Dijkstra Variants"
     ],
     "activities": [
-        "Developed a dependency-free pathfinding and routing engine in Python, including a custom binary Min-Heap supporting O(log V) decrease-key operations.",
-        "Implemented Standard Dijkstra, Bidirectional Dijkstra (reduces search space by exploring outward from both source and target), and Time-Aware Dijkstra utilizing sinusoidal rush-hour traffic multipliers.",
-        "Designed a dynamic obstacle avoidance mechanism allowing real-time exclusion of nodes or edges without rebuilding the graph.",
-        "Engineered a Hub-Based Precomputation Cache that caches paths between high-degree structural nodes, scaling query times to sub-millisecond execution.",
-        "Created an interactive CLI and an empirical benchmarking suite (evaluation.py) to evaluate execution time, node exploration size, and cache hit metrics."
+        "Developed a custom binary MinHeap from scratch to bypass limitations in standard libraries, enabling efficient node distance updates and optimizing memory usage during graph traversals on a 19,600-node network.",
+        "Improved routing execution times by implementing a bidirectional search variant, successfully reducing the search space and node exploration compared to standard unidirectional Dijkstra across sparse and dense topologies.",
+        "Integrated a path-caching mechanism to store and instantly retrieve frequently requested routes, avoiding redundant calculations and minimizing CPU overhead for repetitive queries."
     ],
     "metricValue": "O(log V)",
     "metricLabel": "Heap Operations",

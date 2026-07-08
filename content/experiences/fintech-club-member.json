@@ -1,0 +1,13 @@
+{
+    "name": "FinTech Club - Member",
+    "position": "Technology Department - Member",
+    "place": "RMIT Vietnam FinTech Club",
+    "accessLink": "https://www.facebook.com/rmitfintechclub",
+    "time": "Feb 2024 - Jan 2025",
+    "activities": [
+        "Led a team to create a learning hub focused on Data Structures and Algorithms, encouraging a collaborative and active learning environment where participants can enhance their technical skills through peer-led discussions and presentations.",
+        "Contributed to develop the FinTech Club website including coding front-end UI and back-end CMS to ensure a seamless user experience and efficient content management."
+    ],
+    "type": "club",
+    "order": 3
+}
